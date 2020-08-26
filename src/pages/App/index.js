@@ -1,9 +1,10 @@
 import React from 'react';
-import './App.css';
+import './styles.css';
+import Routes from '../../routes/router';
 
 function App() {
   return (
-    <h1>Medclin</h1>
+    <Routes />
   );
 }
 
