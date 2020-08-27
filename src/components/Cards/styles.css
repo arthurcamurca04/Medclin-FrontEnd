@@ -1,0 +1,18 @@
+#card{
+    margin-top: 144px;
+    text-align: center;
+}
+
+#card h1{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#card h3{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: #393939;
+}
+
+
+

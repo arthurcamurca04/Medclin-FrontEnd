@@ -1,48 +1,11 @@
-#page-login{
-    width: 100vw;
-    height: 100vh;
+img{
+    height: 550px;
 }
 
-#page-login #page-login-content .page-login-logo img{
-    height: 750px;
+#mt-card{
+    margin-top: 9rem;
 }
 
-#page-login #page-login-form{
-    background-color: var(--color-white);
-    border-radius: 0.8rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-}
-
-#page-login #page-login-form p{
-    margin-bottom: 1rem;
-}
-
-#page-login #page-login-form .link{
-    text-decoration: none;
-}
-
-#page-login #page-login-form #form-login{
-    display: flex;
-    flex-direction: column;
-}
-
-#page-login #page-login-form #form-login .input-login{
-    margin-bottom: 1rem;
-}
-
-#page-login #page-login-form #form-login .btn{
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
-}
-
-@media (min-width: 1100px){
-    #page-login{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+#mt-text{
+    margin-top: 2rem;
 }
