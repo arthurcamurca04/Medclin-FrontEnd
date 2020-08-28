@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import logoMedclin from '../../assets/images/logo-medclin.svg';
-import avatar from '../../assets/images/avatar.jpg';
+import avatar from '../../assets/images/arthur.jpg';
 import './styles.css';
 
 export default function Navigation() {
