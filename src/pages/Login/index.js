@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import { Link } from 'react-router-dom';
 import logoMedclin from '../../assets/images/logo-medclin.svg';
@@ -35,14 +34,14 @@ export default function Login() {
                             <Form.Group controlId="formBasicCheckbox">
                                 <Form.Check type="checkbox" label="Mantenha-me conectado" />
                             </Form.Group>
-                            <Button block variant="primary" type="submit">Entrar</Button>
+                            <Link to="/" className="btn btn-lg btn-primary btn-block">Entrar</Link>
                         </Form>
                         <div id="mt-text">
                          Ainda não é cadastrado?
                         </div>
-                        <Link className="link" to="/"> Cadastre-se</Link>
+                        <Link className="link" to="/signup"> Cadastre-se</Link>
 
-                        <Link className="link" to="/signup">Esqueci a senha</Link>
+                        <Link className="link" to="/">Esqueci a senha</Link>
                     </Card>
 
                 </Col>

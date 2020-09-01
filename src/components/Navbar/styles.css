@@ -6,10 +6,15 @@
 }
 
 #btn-logout{
-    margin-right: 74px;
+    margin-right: 1.2rem;
 }
 
 #avatar{
     height: 54px;
     width: 54px;
+}
+
+.links{
+    color: #393939;
+    text-decoration: none;
 }

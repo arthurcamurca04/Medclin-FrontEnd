@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Cards from '../../components/Cards';
-import landing from '../../assets/images/landing.svg';
+import landing from '../../assets/images/doctor_principal.svg';
 import './styles.css';
 
 export default function Dashboard() {
