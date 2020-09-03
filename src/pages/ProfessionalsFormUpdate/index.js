@@ -55,7 +55,7 @@ export default function ProfissionalForm() {
                                             <Col md={3}>
                                                 <Form.Group>
                                                     <Form.Label>ID. PROF.</Form.Label>
-                                                    <Form.Control type="text"></Form.Control>
+                                                    <Form.Control readOnly type="text"></Form.Control>
                                                 </Form.Group>
                                             </Col>
                                             <Col md={4}>
@@ -107,7 +107,7 @@ export default function ProfissionalForm() {
                                         <Row className="mt-2">
                                             <Col md={3}>
                                                 <Form.Label>CPF</Form.Label>
-                                                <Form.Control type="text" />
+                                                <Form.Control readOnly type="text" />
                                             </Col>
                                             <Col md={3}>
                                                 <Form.Label>Estado civil</Form.Label>
@@ -120,7 +120,7 @@ export default function ProfissionalForm() {
                                             </Col>
                                             <Col md={6}>
                                                 <Form.Label>E-mail</Form.Label>
-                                                <Form.Control type="email" />
+                                                <Form.Control readOnly type="email" />
                                             </Col>
                                         </Row>
                                     </Col>
@@ -174,7 +174,7 @@ export default function ProfissionalForm() {
                             </Container>
                             <Row className="d-flex justify-content-end mt-2 mr-2 mb-4">
                                 <Col md={1}>
-                                    <Button size="lg" type="button" variant="success">Voltar</Button>
+                                    <Button size="lg" type="button" variant="danger">Excluir</Button>
                                 </Col>
                                 <Col md={1}>
                                     <Button size="lg" type="submit" variant="primary">Salvar</Button>

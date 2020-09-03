@@ -4,6 +4,7 @@ import Login from '../pages/Login';
 import Dashboard from '../pages/Dashboard';
 import AdminDashboard from '../pages/AdminDashboard';
 import ProfessionalForm from '../pages/ProfessionalsForm'
+import ProfessionalFormUpdate from '../pages/ProfessionalsFormUpdate'
 
 function Routes(){
     return (
@@ -13,7 +14,8 @@ function Routes(){
                     <Route exact path="/" component={Dashboard}/>
                     <Route path="/login" component={Login}/>
                     <Route path="/admin/dashboard" component={AdminDashboard}/>
-                    <Route path="/signup_prof" component={ProfessionalForm}/>
+                    <Route path="/admin/signup_prof" component={ProfessionalForm}/>
+                    <Route path="/admin/update_prof" component={ProfessionalFormUpdate}/>
                 </Switch>
             </Suspense>
         </BrowserRouter>

@@ -10,6 +10,7 @@ import refreshIcon from '../../assets/icons/refresh.svg';
 import filterIcon from '../../assets/icons/filter.svg';
 import avatarIcon from '../../assets/icons/user.svg';
 import {Link} from 'react-router-dom';
+import { HiOutlinePencilAlt, HiOutlinePlusCircle } from 'react-icons/hi'
 import './styles.css';
 
 export default function AdminDashboard() {
@@ -56,9 +57,14 @@ export default function AdminDashboard() {
                                                             <h5>Nome</h5>
                                                             <strong>Arthur</strong>
                                                         </Col>
-                                                        <Col md={4}>
+                                                        <Col md={2}>
                                                             <h5>Especialidade</h5>
                                                             <strong>Cardiologista</strong>
+                                                        </Col>
+                                                        <Col md={2}>
+                                                            <Link to="/admin/update_prof">
+                                                                <HiOutlinePencilAlt fontSize="32"/>
+                                                            </Link>
                                                         </Col>
                                                     </Row>
                                                 </div>
@@ -75,9 +81,15 @@ export default function AdminDashboard() {
                                                             <h5>Nome</h5>
                                                             <strong>Reinaldo Neto</strong>
                                                         </Col>
-                                                        <Col md={4}>
+                                                        <Col md={2}>
                                                             <h5>Especialidade</h5>
                                                             <strong>Ortopedista</strong>
+                                                        </Col>
+
+                                                        <Col md={2}>
+                                                            <Link to="/admin/update_prof">
+                                                                <HiOutlinePencilAlt fontSize="32"/>
+                                                            </Link>
                                                         </Col>
                                                     </Row>
                                                 </div>
@@ -88,7 +100,7 @@ export default function AdminDashboard() {
 
                                 <Row>
                                     <Col className="d-flex justify-content-end">
-                                        <Link id="link-add" to="/signup_prof">+ Adicionar</Link>
+                                        <Link id="link-add" to="/admin/signup_prof"><strong><HiOutlinePlusCircle fontSize="28" /> Adicionar</strong></Link>
                                     </Col>
                                 </Row>
                             </Container>
