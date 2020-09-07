@@ -39,7 +39,7 @@ export default function Login() {
                         <div id="mt-text">
                          Ainda não é cadastrado?
                         </div>
-                        <Link className="link" to="/signup"> Cadastre-se</Link>
+                        <Link className="link" to="/users/form"> Cadastre-se</Link>
 
                         <Link className="link" to="/">Esqueci a senha</Link>
                     </Card>
