@@ -12,8 +12,8 @@ import './styles.css';
 export default function Navigation() {
     return (
         <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">
-                <Link to="/"><img id="logo-medclin" src={logoMedclin} alt="Medclin brand" /></Link>
+            <Navbar.Brand>
+                <Link to="/"><img id="logo-medclin" src={logoMedclin} alt="Medclin brand"/></Link>
             </Navbar.Brand>
             
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

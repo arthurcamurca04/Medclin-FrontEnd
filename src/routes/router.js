@@ -1,27 +1,39 @@
-import React, { Suspense } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Login from '../pages/Login';
-import Dashboard from '../pages/Dashboard';
-import AdminDashboard from '../pages/AdminDashboard';
-import ProfessionalForm from '../pages/ProfessionalsForm';
-import ProfessionalFormUpdate from '../pages/ProfessionalsFormUpdate';
-import UsersForm from '../pages/UsersForm';
+import React, { Suspense } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Login from "../pages/Login";
+import Dashboard from "../pages/Dashboard";
+import AdminDashboard from "../pages/AdminDashboard";
+import ProfessionalForm from "../pages/ProfessionalsForm";
+import ProfessionalFormUpdate from "../pages/ProfessionalsFormUpdate";
+import UsersForm from "../pages/UsersForm";
+import StoreProvider from "../Store/Provider";
+import RoutesPrivate from "./Private";
+import NotFound from "../pages/NotFound/NotFound";
 
-function Routes(){
-    return (
-        <BrowserRouter>
-            <Suspense fallback={<div></div>}>
-                <Switch>
-                    <Route exact path="/" component={Dashboard}/>
-                    <Route path="/login" component={Login}/>
-                    <Route path="/admin/dashboard" component={AdminDashboard}/>
-                    <Route path="/admin/signup_prof" component={ProfessionalForm}/>
-                    <Route path="/admin/update_prof" component={ProfessionalFormUpdate}/>
-                    <Route path="/users/form" component={UsersForm}/>
-                </Switch>
-            </Suspense>
-        </BrowserRouter>
-    );
+function Routes() {
+  return (
+    <BrowserRouter>
+      <Suspense fallback={<div></div>}>
+        <StoreProvider>
+          <Switch>
+            <RoutesPrivate exact path="/" component={Dashboard} />
+            <Route path="/login" component={Login} />
+            <RoutesPrivate path="/admin/dashboard" component={AdminDashboard} />
+            <RoutesPrivate
+              path="/admin/cadastrar/profissional"
+              component={ProfessionalForm}
+            />
+            <RoutesPrivate
+              path="/admin/atualizar/profissional"
+              component={ProfessionalFormUpdate}
+            />
+            <Route path="/pacientes/formulario" component={UsersForm} />
+            <Route component={NotFound} />
+          </Switch>
+        </StoreProvider>
+      </Suspense>
+    </BrowserRouter>
+  );
 }
 
 export default Routes;
