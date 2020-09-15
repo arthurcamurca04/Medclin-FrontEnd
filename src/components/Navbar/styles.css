@@ -1,20 +1,68 @@
-#logo-medclin{
-    height: 102px;
-    width: 102px;
-    margin-left: 74px;
-    margin-right: 74px;
+.header {
+  background-color: var(--color-white);
+  height: 10rem;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-#btn-logout{
-    margin-right: 1.2rem;
+.header .menu {
+  display: flex;
+  align-items: center;
 }
 
-#avatar{
-    height: 54px;
-    width: 54px;
+.header #header-logo-medclin {
+  height: 10rem;
+  width: 10rem;
 }
 
-.links{
-    color: #393939;
+.header .nav-aside {
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-container .nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.nav-container .nav-menu li a {
+  text-decoration: none;
+  color: #393939;
+  margin: 1.2rem;
+}
+
+.avatar {
+  height: 5rem;
+  width: 5rem;
+}
+
+#nav-btn-logout {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 1px solid var(--color-outline-button);
+  color: var(--color-outline-button);
+  transition: all 0.3s;
+}
+
+#nav-btn-logout:hover {
+  color: var(--color-white);
+  background-color: var(--color-outline-button);
+}
+
+.nav-aside #link{
     text-decoration: none;
+    color: #393939;
+
 }
