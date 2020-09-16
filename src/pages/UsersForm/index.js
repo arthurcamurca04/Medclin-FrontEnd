@@ -5,12 +5,12 @@ import './styles.css';
 
 export default function UsersForm(){
     return(
-        <Container>
-            <Row >
-                <Col >
+        <Container className="form-user-container">
+            <Row className="form-user-container-row">
+                <Col className="mr-4">
                     <img id="user-form-icon" src={usersFormIcon} alt="Médicos"/>
                 </Col>
-                <Col className="mt-4">
+                <Col className="mt-4 ml-4">
                     <h1 className="title-form" >Faça seu cadastro</h1>
                     <h4 className="subtitle-form" >Venha cuidar da sua saúde</h4>
         
