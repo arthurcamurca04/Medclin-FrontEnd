@@ -9,105 +9,195 @@ export default function ProfissionalForm() {
     <>
       <Navigation />
       <div className="admin-dashboard">
-       
-          <div className="col-1">
-            <AsidePanel />
-          </div>
+        <div className="col-1">
+          <AsidePanel />
+        </div>
 
-          <div className="col-2">
-            <div className="container-title">
-              <h1>Profissionais</h1>
-            </div>
-            <img id="avatarIcon" src={avatarIcon} alt="Avatar" />
-            <form>
-              <div className="container-cadastro">
-                <label>Nome</label>
-                <input type="text" />
+        <div className="col-2">
+          <h1>Profissionais</h1>
 
-                <label>Sobrenome</label>
-                <input type="text" />
+          <div className="form-container">
+            <form method="post">
+              <fieldset>
+                <div className="fieldset-1">
+                  <div>
+                    <img id="avatarIcon" src={avatarIcon} alt="Avatar" />
+                  </div>
+                  <div className="name">
+                    <label htmlFor="name">Nome completo</label>
+                    <input
+                      className="input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
 
-                <label>ID. PROF.</label>
-                <input type="text"></input>
+                  <div className="profissional-data">
+                    <div>
+                      <label htmlFor="crm">CRM</label>
+                      <input
+                        className="input"
+                        type="text"
+                        id="crm"
+                        name="crm"
+                        required
+                      />
+                    </div>
 
-                <label>Profissão</label>
-                <select>
-                  <option>MÉDICO</option>
-                  <option>FISIOTERAPEUTA</option>
-                  <option>NUTRICIONISTA</option>
-                </select>
+                    <div>
+                      <label htmlFor="specialties">Especialidades</label>
+                      <select
+                        className="input"
+                        name="specialties"
+                        id="specialties"
+                        multiple
+                        required
+                      >
+                        <option>CARDIOLOGISTA</option>
+                        <option>PNEUMOLOGISTA</option>
+                        <option>REUMATOLOGISTA</option>
+                        <option>ORTOPEDISTA</option>
+                        <option>OFTALMOLOGISTA</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
 
-                <label>Especialidades</label>
-                <select multiple>
-                  <option>CARDIOLOGISTA</option>
-                  <option>PNEUMOLOGISTA</option>
-                  <option>REUMATOLOGISTA</option>
-                  <option>ORTOPEDISTA</option>
-                  <option>OFTALMOLOGISTA</option>
-                </select>
+              <fieldset>
+                <legend>Dados pessoais</legend>
+                <div className="fieldset-2">
+                  <div>
+                    <label htmlFor="gender">Sexo</label>
+                    <select
+                      required
+                      className="input"
+                      name="gender"
+                      id="gender"
+                    >
+                      <option>Masculino</option>
+                      <option>Feminino</option>
+                    </select>
+                  </div>
 
-                <h3>Dados pessoais</h3>
+                  <div>
+                    <label htmlFor="birthday">Data de Nascimento</label>
+                    <input
+                      className="input"
+                      name="birthday"
+                      id="birthday"
+                      type="date"
+                      required
+                    />
+                  </div>
 
-                <label>Sexo</label>
-                <select>
-                  <option>Masculino</option>
-                  <option>Feminino</option>
-                </select>
+                  <div>
+                    <label htmlFor="phone">Telefone</label>
+                    <input
+                      className="input"
+                      name="phone"
+                      id="phone"
+                      type="text"
+                      required
+                    />
+                  </div>
 
-                <label>Data de Nascimento</label>
-                <input type="date" />
+                  <div>
+                    <label htmlFor="cpf">CPF</label>
+                    <input
+                      className="input"
+                      name="cpf"
+                      id="cpf"
+                      type="text"
+                      required
+                    />
+                  </div>
 
-                <label>Telefone</label>
-                <input type="text" />
+                  <div>
+                    <label htmlFor="civil-state">Estado civil</label>
+                    <select
+                      className="input"
+                      name="civil-state"
+                      id="civil-state"
+                      required
+                    >
+                      <option>Solteiro(a)</option>
+                      <option>Casado(a)</option>
+                      <option>Divórciado(a)</option>
+                      <option>Viúvo(a)</option>
+                    </select>
+                  </div>
 
-                <label>CPF</label>
-                <input type="text" />
+                  <div>
+                    <label htmlFor="email">E-mail</label>
+                    <input
+                      className="input"
+                      name="email"
+                      id="email"
+                      type="email"
+                      required
+                    />
+                  </div>
+                </div>
+              </fieldset>
 
-                <label>Estado civil</label>
-                <select>
-                  <option>Solteiro(a)</option>
-                  <option>Casado(a)</option>
-                  <option>Divórciado(a)</option>
-                  <option>Viúvo(a)</option>
-                </select>
+              <fieldset>
+                <legend>Endereço</legend>
+                <div className="fieldset-3">
+                  <div>
+                    <label>Rua</label>
+                    <input className="input" type="text" required />
+                  </div>
 
-                <label>E-mail</label>
-                <input type="email" />
+                  <div>
+                    <label>nº</label>
+                    <input required className="input" min="0" type="number" />
+                  </div>
 
-                <h3 className="mt-4">Endereço</h3>
+                  <div>
+                    <label>Bairro</label>
+                    <input className="input" type="text" required />
+                  </div>
 
-                <label>Rua</label>
-                <input type="text" />
+                  <div>
+                    <label>País</label>
+                    <select required className="input">
+                      <option>Brasil</option>
+                    </select>
+                  </div>
 
-                <label>nº</label>
-                <input min="0" type="number"></input>
+                  <div>
+                    <label>Estado</label>
+                    <select required className="input">
+                      <option>Paraíba</option>
+                      <option>Pernambuco</option>
+                    </select>
+                  </div>
 
-                <label>Bairro</label>
-                <input type="text" />
+                  <div>
+                    <label>Cidade</label>
+                    <select required className="input">
+                      <option>Patos</option>
+                      <option>Piancó</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
 
-                <label>País</label>
-                <select>
-                  <option>Brasil</option>
-                </select>
-
-                <label>Estado</label>
-                <select>
-                  <option>Paraíba</option>
-                  <option>Pernambuco</option>
-                </select>
-
-                <label>Cidade</label>
-                <select>
-                  <option>Patos</option>
-                  <option>Piancó</option>
-                </select>
-
-                <button type="button">Voltar</button>
-                <button type="submit">Salvar</button>
+              <div className="buttons">
+                <button className="button button-back" type="button">
+                  Voltar
+                </button>
+                <button className="button button-save" type="submit">
+                  Salvar
+                </button>
               </div>
             </form>
           </div>
         </div>
+      </div>
     </>
   );
 }
