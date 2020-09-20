@@ -36,7 +36,7 @@ export default function Navigation() {
 
         <div className="nav-aside">
           <img className="avatar" src={avatar} alt="Avatar" />
-          <Link id="link" to="/perfil">Meu perfil</Link>
+          <Link id="link" to="/paciente/perfil">Meu perfil</Link>
           <button id="nav-btn-logout" type="button">
             Logout
           </button>
