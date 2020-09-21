@@ -13,6 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: 0;
+
 }
 
 html, body, #root {
@@ -21,15 +22,11 @@ html, body, #root {
 
 body{
   background-color: var(--color-background);
+ 
 }
 
 body,
 input, 
 button{
   font: 500 1.2rem 'Quicksand';
-}
-
-#container{
-  width: 90vw;
-  max-width: 980px;
 }

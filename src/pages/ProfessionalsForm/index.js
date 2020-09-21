@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "../../components/Navbar";
 import AsidePanel from "../../components/AsidePanel";
-import avatarIcon from "../../assets/icons/user.svg";
+import avatarIcon from "../../assets/images/undraw_profile_pic_ic5t.svg";
 import "./styles.css";
 
 export default function ProfissionalForm() {

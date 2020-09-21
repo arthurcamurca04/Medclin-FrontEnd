@@ -4,6 +4,7 @@ import Login from "../pages/Login";
 import Dashboard from "../pages/Dashboard";
 import AdminDashboard from "../pages/AdminDashboard";
 import PacientDashboard from "../pages/PacienteDashboard";
+import ComorbitiesScreen from "../pages/Comorbities";
 import ProfessionalForm from "../pages/ProfessionalsForm";
 import ProfessionalFormUpdate from "../pages/ProfessionalsFormUpdate";
 import UsersForm from "../pages/UsersForm";
@@ -21,6 +22,7 @@ function Routes() {
             <Route path="/login" component={Login} />
             <RoutesPrivate path="/admin/dashboard" component={AdminDashboard} />
             <RoutesPrivate path="/paciente/perfil" component={PacientDashboard} />
+            <RoutesPrivate path="/paciente/comorbidades" component={ComorbitiesScreen} />
             <RoutesPrivate
               path="/admin/cadastrar/profissional"
               component={ProfessionalForm}

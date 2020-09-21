@@ -13,9 +13,9 @@ export default function AdminDashboard() {
       <Navigation />
 
       <main>
-        <Container fluid className="mt-4">
+        <Container fluid >
           <Row>
-            <Col md={3}>
+            <Col md={3} className="p-0">
               <AsidePanel />
             </Col>
             <Col md={9}>

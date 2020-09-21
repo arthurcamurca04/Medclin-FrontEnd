@@ -1,13 +1,16 @@
-.admin-dashboard{
+.paciente-dashboard{
     display:grid;
     grid-template: 1fr/1fr 3fr;
 }
 
-.admin-dashboard .col-2 {
+.paciente-dashboard .col-1 {
+    padding: 0;
+}
+.paciente-dashboard .col-2 {
     margin-top: 1rem;
 }
 
-.admin-dashboard .col-2 .form-container{
+.paciente-dashboard .col-2 .form-container{
     background-color: var(--color-white);
     width: 70vw;
     padding: 1.2rem;
@@ -17,19 +20,18 @@
     
 }
 
-.admin-dashboard .col-2 .form-container form .fieldset-pacient{
+.paciente-dashboard .col-2 .form-container form .fieldset-pacient{
     margin-bottom: 1rem;
     display: grid;
     grid-template: 1fr/2fr 2fr
     
 }
 
-.admin-dashboard .col-2 .form-container form .fieldset-pacient  #avatarIcon{
-    margin-left: 30rem;
-    
+.paciente-dashboard .col-2 .form-container form .fieldset-pacient  #avatarIcon{
+    margin-left: 30rem;    
 }
 
-.admin-dashboard .col-2 .form-container form .fieldset-1 .name{
+.paciente-dashboard .col-2 .form-container form .fieldset-1 .name{
     
     display: flex;
     flex-direction: column;
@@ -38,31 +40,31 @@
    
 }
 
-.admin-dashboard .col-2 .form-container form .fieldset-1 .profissional-data div{
+.paciente-dashboard .col-2 .form-container form .fieldset-1 .profissional-data div{
     display: flex;
     flex-direction: column;
     padding: 0 1.2rem;
 }
 
-.admin-dashboard .col-2 .form-container form .fieldset-2{
+.paciente-dashboard .col-2 .form-container form .fieldset-2{
     width: 70%;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
     gap: 1rem;
 }
 
-.admin-dashboard .col-2 .form-container form .fieldset-2 div{
+.paciente-dashboard .col-2 .form-container form .fieldset-2 div{
     display: flex;
     flex-direction: column;
 }
-.admin-dashboard .col-2 .form-container form .fieldset-3{
+.paciente-dashboard .col-2 .form-container form .fieldset-3{
     width: 70%;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
     gap: 1rem;
 }
 
-.admin-dashboard .col-2 .form-container form .fieldset-3 div{
+.paciente-dashboard .col-2 .form-container form .fieldset-3 div{
     display: flex;
     flex-direction: column;
 }

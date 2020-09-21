@@ -1,0 +1,14 @@
+.add-comorbity{
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-comorbity button{
+    border: none;
+    margin-left: 1.2rem;
+    background-color: transparent;
+    font-size: 28px;
+    color: #ccc;
+}

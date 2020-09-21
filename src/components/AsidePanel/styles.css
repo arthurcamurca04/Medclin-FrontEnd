@@ -1,6 +1,7 @@
 .aside-panel{
     height: 100vh;
     width: 20rem;
+    margin: 0;
     padding: 1.2rem 0 0 1.2rem;
     background-color: var(--color-background-aside);
     color: var(--color-white);

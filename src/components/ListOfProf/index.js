@@ -3,8 +3,9 @@ import { Container, Row, Col, Form, ListGroup} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import refreshIcon from "../../assets/icons/refresh.svg";
 import filterIcon from "../../assets/icons/filter.svg";
-import avatarIcon from "../../assets/icons/user.svg";
-import { HiOutlinePencilAlt, HiOutlinePlusCircle } from 'react-icons/hi';
+import avatarIcon from "../../assets/images/undraw_profile_pic_ic5t.svg";
+import { HiOutlinePencilAlt } from 'react-icons/hi';
+import { FiPlus } from 'react-icons/fi';
 import './styles.css';
 
 export default function ListOfProfessionals() {
@@ -88,7 +89,7 @@ export default function ListOfProfessionals() {
         <Col className="d-flex justify-content-end">
           <Link id="link-add" to="/admin/cadastrar/profissional">
             <strong>
-              <HiOutlinePlusCircle fontSize="28" /> Adicionar
+              <FiPlus/> Adicionar
             </strong>
           </Link>
         </Col>

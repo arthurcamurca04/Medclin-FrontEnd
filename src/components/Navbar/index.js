@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logoMedclin from "../../assets/images/logo-medclin.svg";
-import avatar from "../../assets/icons/user.svg";
+import avatar from "../../assets/images/undraw_profile_pic_ic5t.svg";
 import "./styles.css";
 
 export default function Navigation() {

@@ -1,14 +1,14 @@
 import React from "react";
 import Navigation from "../../components/Navbar";
 import AsidePanelPacient from "../../components/AsidePanelPacient";
-import avatarIcon from "../../assets/icons/user.svg";
+import avatarIcon from "../../assets/images/undraw_profile_pic_ic5t.svg";
 import './styles.css';
 
 export default function PacientDashboard() {
   return (
     <>
       <Navigation />
-      <div className="admin-dashboard">
+      <div className="paciente-dashboard">
         <div className="col-1">
           <AsidePanelPacient />
         </div>
