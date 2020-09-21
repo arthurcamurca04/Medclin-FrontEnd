@@ -1,10 +1,10 @@
 import React from "react";
 import Navigation from "../../components/Navbar/index";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col } from "react-bootstrap";
+import cardDoctor from "../../assets/images/doctor.svg";
+import cardPatient from "../../assets/images/patient.svg";
+import cardAppointment from "../../assets/images/appointment.svg";
 import AsidePanel from "../../components/AsidePanel";
-import ListOfProfessionals from "../../components/ListOfProf"
 import "./styles.css";
 
 export default function AdminDashboard() {
@@ -13,13 +13,34 @@ export default function AdminDashboard() {
       <Navigation />
 
       <main>
-        <Container fluid >
+        <Container fluid>
           <Row>
             <Col md={3} className="p-0">
               <AsidePanel />
             </Col>
             <Col md={9}>
-              <ListOfProfessionals/>
+              <div className="title">
+                <h1>Painel Admin</h1>
+              </div>
+
+              <div className="admin-panel">
+                <div className="cards">
+                  <ul className="cards-list">
+                    <li>
+                      <strong>10</strong>
+                      <img src={cardDoctor} alt="Médico" />
+                    </li>
+                    <li>
+                    <strong>20</strong>
+                      <img src={cardPatient} alt="Paciente" />
+                    </li>
+                    <li>
+                    <strong>30</strong>
+                      <img src={cardAppointment} alt="Consulta" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>

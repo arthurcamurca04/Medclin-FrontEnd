@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Login from "../pages/Login";
 import Dashboard from "../pages/Dashboard";
 import AdminDashboard from "../pages/AdminDashboard";
+import ProfissionalsList from "../pages/ProfessionaisList";
 import PacientDashboard from "../pages/PacienteDashboard";
 import ComorbitiesScreen from "../pages/Comorbities";
 import ProfessionalForm from "../pages/ProfessionalsForm";
@@ -21,6 +22,7 @@ function Routes() {
             <RoutesPrivate exact path="/" component={Dashboard} />
             <Route path="/login" component={Login} />
             <RoutesPrivate path="/admin/dashboard" component={AdminDashboard} />
+            <RoutesPrivate path="/admin/medicos" component={ProfissionalsList} />
             <RoutesPrivate path="/paciente/perfil" component={PacientDashboard} />
             <RoutesPrivate path="/paciente/comorbidades" component={ComorbitiesScreen} />
             <RoutesPrivate

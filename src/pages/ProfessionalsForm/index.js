@@ -14,8 +14,9 @@ export default function ProfissionalForm() {
         </div>
 
         <div className="col-2">
-          <h1>Profissionais</h1>
-
+          <div className="title">
+            <h1>Profissionais</h1>
+          </div>
           <div className="form-container">
             <form method="post">
               <fieldset>
