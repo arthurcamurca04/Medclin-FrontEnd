@@ -1,21 +1,21 @@
 import React from "react";
-import { Container, Row, Col, Form, ListGroup} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container, Row, Col, Form, ListGroup } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import refreshIcon from "../../assets/icons/refresh.svg";
 import filterIcon from "../../assets/icons/filter.svg";
 import avatarIcon from "../../assets/images/undraw_profile_pic_ic5t.svg";
-import { HiOutlinePencilAlt } from 'react-icons/hi';
-import { FiPlus } from 'react-icons/fi';
-import './styles.css';
+import { HiOutlinePencilAlt } from "react-icons/hi";
+import { FiPlus } from "react-icons/fi";
+import "./styles.css";
 
 export default function ListOfProfessionals() {
   return (
     <Container fluid>
       <Row id="row-title">
         <Col md={10}>
-          <h3>
-            <strong>Lista de Profissionais</strong>
-          </h3>
+          <div className="title">
+            <h1>Médicos</h1>
+          </div>
         </Col>
         <Col md={2}>
           <Link to="/admin/dashboard">
@@ -89,7 +89,7 @@ export default function ListOfProfessionals() {
         <Col className="d-flex justify-content-end">
           <Link id="link-add" to="/admin/cadastrar/profissional">
             <strong>
-              <FiPlus/> Adicionar
+              <FiPlus /> Adicionar
             </strong>
           </Link>
         </Col>

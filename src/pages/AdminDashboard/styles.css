@@ -1,0 +1,39 @@
+.title{
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 3px solid #aaa;
+}
+
+.cards .cards-list {
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 0;
+
+}
+
+.cards .cards-list li{    
+    border-radius: .8rem;
+    box-shadow: 1px 1px 1px #ccc; 
+}
+
+.cards .cards-list li strong{
+    color: #aaa;
+    font-size: 5.8rem;
+}
+
+.cards .cards-list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-white);
+    width: 248px;
+    height: 132px;
+}
+
+.cards .cards-list li img{
+    width: 84px;
+    height: 84px;
+}
