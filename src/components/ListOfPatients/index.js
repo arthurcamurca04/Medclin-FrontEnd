@@ -15,13 +15,13 @@ import { HiOutlinePencilAlt } from "react-icons/hi";
 import { FiPlus } from "react-icons/fi";
 import "./styles.css";
 
-export default function ListOfProfessionals() {
+export default function ListOfPatients() {
   return (
     <Container fluid>
       <Row id="row-title">
         <Col md={10}>
           <div className="title">
-            <h1>Médicos</h1>
+            <h1>Pacientes</h1>
           </div>
         </Col>
         <Col md={2}>
@@ -52,12 +52,8 @@ export default function ListOfProfessionals() {
                     <h5>Nome</h5>
                     <strong>Arthur</strong>
                   </Col>
-                  <Col md={2}>
-                    <h5>Especialidade</h5>
-                    <strong>Cardiologista</strong>
-                  </Col>
-                  <Col md={2}>
-                    <Link to="/admin/atualizar/profissional">
+                  <Col md={4}>
+                    <Link to="/admin/atualizar/patientes">
                       <HiOutlinePencilAlt fontSize="32" />
                     </Link>
                   </Col>
@@ -75,12 +71,7 @@ export default function ListOfProfessionals() {
                     <h5>Nome</h5>
                     <strong>Reinaldo Neto</strong>
                   </Col>
-                  <Col md={2}>
-                    <h5>Especialidade</h5>
-                    <strong>Ortopedista</strong>
-                  </Col>
-
-                  <Col md={2}>
+                  <Col md={4}>
                     <Link to="/admin/atualizar/profissional">
                       <HiOutlinePencilAlt fontSize="32" />
                     </Link>
@@ -107,7 +98,7 @@ export default function ListOfProfessionals() {
           </Pagination>
         </Col>
         <Col className="d-flex justify-content-end">
-          <Link id="link-add" to="/admin/cadastrar/profissional">
+          <Link id="link-add" to="/admin/cadastrar/paciente">
             <strong>
               <FiPlus /> Adicionar
             </strong>
