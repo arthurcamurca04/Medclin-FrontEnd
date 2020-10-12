@@ -8,6 +8,7 @@ import PatientsList from "../pages/PatientsList";
 import PacientDashboard from "../pages/PacienteDashboard";
 import ComorbitiesScreen from "../pages/Comorbities";
 import ProfessionalForm from "../pages/ProfessionalsForm";
+import PatientForm from "../pages/PatientsForm";
 import ProfessionalFormUpdate from "../pages/ProfessionalsFormUpdate";
 import UsersForm from "../pages/UsersForm";
 import AgendamentoConsulta from "../pages/AgendamentoConsulta";
@@ -32,6 +33,14 @@ function Routes() {
             <RoutesPrivate
               path="/admin/cadastrar/profissional"
               component={ProfessionalForm}
+            />
+            <RoutesPrivate
+              path="/admin/cadastrar/paciente"
+              component={PatientForm}
+            />
+            <RoutesPrivate
+              path="/admin/atualizar/paciente"
+              component={PatientForm}
             />
             <RoutesPrivate
               path="/admin/atualizar/profissional"

@@ -1,21 +1,22 @@
 import React from "react";
 import Navigation from "../../components/Navbar";
-import AsidePanelPacient from "../../components/AsidePanelPacient";
+import AsidePanel from "../../components/AsidePanel";
 import FormPatient from "../../components/PatientsForm";
-import './styles.css';
+import "./styles.css";
 
-export default function PacientDashboard() {
+export default function PatientForm() {
   return (
     <>
       <Navigation />
-      <div className="paciente-dashboard">
+      <div className="admin-dashboard">
         <div className="col-1">
-          <AsidePanelPacient />
+          <AsidePanel />
         </div>
 
         <div className="col-2">
-          <h1>Pacientes</h1>
-
+          <div className="title">
+            <h1>Paciente</h1>
+          </div>
           <div className="form-container">
             <FormPatient/>
           </div>

@@ -53,7 +53,7 @@ export default function ListOfPatients() {
                     <strong>Arthur</strong>
                   </Col>
                   <Col md={4}>
-                    <Link to="/admin/atualizar/patientes">
+                    <Link to="/admin/atualizar/paciente">
                       <HiOutlinePencilAlt fontSize="32" />
                     </Link>
                   </Col>
@@ -72,7 +72,7 @@ export default function ListOfPatients() {
                     <strong>Reinaldo Neto</strong>
                   </Col>
                   <Col md={4}>
-                    <Link to="/admin/atualizar/profissional">
+                    <Link to="/admin/atualizar/paciente">
                       <HiOutlinePencilAlt fontSize="32" />
                     </Link>
                   </Col>
