@@ -15,10 +15,10 @@ export default function ProfissionalsList() {
       <main>
         <Container fluid >
           <Row>
-            <Col md={3} className="p-0">
+            <Col md={2} className="p-0">
               <AsidePanel />
             </Col>
-            <Col md={9}>
+            <Col >
               <ListOfProfessionals/>
             </Col>
           </Row>
