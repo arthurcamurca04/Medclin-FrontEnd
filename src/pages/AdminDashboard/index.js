@@ -11,14 +11,12 @@ export default function AdminDashboard() {
   return (
     <>
       <Navigation />
-
-      <main>
         <Container fluid>
           <Row>
-            <Col md={3} className="p-0">
+            <Col md={2} className="p-0">
               <AsidePanel />
             </Col>
-            <Col md={9}>
+            <Col>
               <div className="title">
                 <h1>Painel Admin</h1>
               </div>
@@ -44,7 +42,6 @@ export default function AdminDashboard() {
             </Col>
           </Row>
         </Container>
-      </main>
     </>
   );
 }

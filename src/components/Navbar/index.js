@@ -27,7 +27,7 @@ export default function Navigation() {
 
             <NavDropdown title="Agendamentos" id="basic-nav-dropdown">
               <NavDropdown.Item href="/">Ver agendamentos</NavDropdown.Item>
-              <NavDropdown.Item href="/">Agendar</NavDropdown.Item>
+              <NavDropdown.Item href="/paciente/consultas/agendar">Agendar</NavDropdown.Item>
             </NavDropdown>
 
             <NavDropdown title="Consultas" id="basic-nav-dropdown">

@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom"
 import Navigation from "../../components/Navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -9,6 +10,7 @@ import landing from "../../assets/images/doctor_principal.svg";
 import "./styles.css";
 
 export default function Dashboard() {
+  const history = useHistory();
   return (
     <>
       <Navigation />
@@ -28,7 +30,7 @@ export default function Dashboard() {
                 <Card.Text>
                   Tratamento especializados feito por médicos capacitados.
                 </Card.Text>
-                <Button size="lg" variant="primary">
+                <Button onClick={()=>history.push('/paciente/consultas/agendar')} size="lg" variant="primary">
                   Agende sua consulta
                 </Button>
               </Card.Body>

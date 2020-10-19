@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
+import { useHistory } from "react-router-dom";
+import { Button } from "react-bootstrap";
 import avatarIcon from "../../assets/images/undraw_profile_pic_ic5t.svg";
-import './styles.css';
+import "./styles.css";
 
-export default function FormPatient(){
-    return(
-        <form method="post">
+export default function FormPatient() {
+  const { goBack } = useHistory();
+  return (
+    <div className="form-container">
+      <form onSubmit={() => {}} method="post">
         <fieldset>
           <div className="fieldset-pacient">
             <div className="name">
@@ -28,12 +32,7 @@ export default function FormPatient(){
           <div className="fieldset-2">
             <div>
               <label htmlFor="gender">Sexo</label>
-              <select
-                required
-                className="input"
-                name="gender"
-                id="gender"
-              >
+              <select required className="input" name="gender" id="gender">
                 <option>Masculino</option>
                 <option>Feminino</option>
               </select>
@@ -142,15 +141,20 @@ export default function FormPatient(){
             </div>
           </div>
         </fieldset>
-
         <div className="buttons">
-          <button className="button button-back" type="button">
+          <Button
+            onClick={() => goBack()}
+            variant="success"
+            size="lg"
+            type="button"
+          >
             Voltar
-          </button>
-          <button className="button button-save" type="submit">
+          </Button>
+          <Button className="ml-4" variant="primary" size="lg" type="submit">
             Salvar
-          </button>
+          </Button>
         </div>
       </form>
-    );
+    </div>
+  );
 }

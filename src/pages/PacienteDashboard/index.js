@@ -1,26 +1,28 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import Navigation from "../../components/Navbar";
 import AsidePanelPacient from "../../components/AsidePanelPacient";
 import FormPatient from "../../components/PatientsForm";
-import './styles.css';
+import "./styles.css";
 
 export default function PacientDashboard() {
   return (
     <>
       <Navigation />
-      <div className="paciente-dashboard">
-        <div className="col-1">
-          <AsidePanelPacient />
-        </div>
+      <Container fluid>
+        <Row>
+          <Col md={2} className="p-0">
+            <AsidePanelPacient />
+          </Col>
 
-        <div className="col-2">
-          <h1>Pacientes</h1>
-
-          <div className="form-container">
-            <FormPatient/>
-          </div>
-        </div>
-      </div>
+          <Col >
+            <div className="title">
+              <h1>Pacientes</h1>
+            </div>
+            <FormPatient />
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }

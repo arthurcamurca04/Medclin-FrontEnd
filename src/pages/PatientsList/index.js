@@ -15,10 +15,10 @@ export default function PatientsList() {
       <main>
         <Container fluid >
           <Row>
-            <Col md={3} className="p-0">
+            <Col md={2} className="p-0">
               <AsidePanel />
             </Col>
-            <Col md={9}>
+            <Col >
               <ListOfPatients/>
             </Col>
           </Row>

@@ -29,3 +29,20 @@
     font: 500 1.2rem 'Quicksand', sans-serif;
     
   }
+
+  div.form-container{
+    background-color: var(--color-white);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+select.input{
+    background-color: var(--color-white);
+}
+
+.buttons{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

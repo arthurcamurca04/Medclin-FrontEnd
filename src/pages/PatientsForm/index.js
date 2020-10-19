@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import Navigation from "../../components/Navbar";
 import AsidePanel from "../../components/AsidePanel";
 import FormPatient from "../../components/PatientsForm";
@@ -8,20 +9,20 @@ export default function PatientForm() {
   return (
     <>
       <Navigation />
-      <div className="admin-dashboard">
-        <div className="col-1">
-          <AsidePanel />
-        </div>
+      <Container fluid>
+        <Row>
+          <Col md={2} className="p-0">
+            <AsidePanel />
+          </Col>
 
-        <div className="col-2">
-          <div className="title">
-            <h1>Paciente</h1>
-          </div>
-          <div className="form-container">
-            <FormPatient/>
-          </div>
-        </div>
-      </div>
+          <Col>
+            <div className="title">
+              <h1>Paciente</h1>
+            </div>
+            <FormPatient />
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }
