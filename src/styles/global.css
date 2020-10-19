@@ -12,13 +12,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 0;
-  
   }
   
-  html, body, #root {
+  html, body {
     height: 100vh;
-    width: 100vw;
   }
   
   body{
@@ -30,5 +27,5 @@
   input, 
   button{
     font: 500 1.2rem 'Quicksand', sans-serif;
+    
   }
-  

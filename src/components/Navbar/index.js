@@ -1,14 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
+import { Link, useHistory } from "react-router-dom";
 import logoMedclin from "../../assets/images/logo-medclin.svg";
 import avatar from "../../assets/images/undraw_profile_pic_ic5t.svg";
 import "./styles.css";
 
 export default function Navigation() {
+  const history = useHistory();
   return (
-    <>
-      <header className="header">
-        <div className="menu">
+      <Navbar expand="lg" bg="light">
+        <Navbar.Brand>
           <Link to="/">
             <img
               id="header-logo-medclin"
@@ -16,32 +17,43 @@ export default function Navigation() {
               alt="Medclin brand"
             />
           </Link>
-          <nav className="nav-container">
-            <ul className="nav-menu">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/admin/dashboard">Profissionais</Link>
-              </li>
-              <li>
-                <Link to="/">Pacientes</Link>
-              </li>
-              <li>
-                <Link to="/">Consultas</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-        <div className="nav-aside">
-          <img className="avatar" src={avatar} alt="Avatar" />
-          <Link id="link" to="/paciente/perfil">Meu perfil</Link>
-          <button id="nav-btn-logout" type="button">
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/admin/dashboard">Dashboard</Nav.Link>
+
+            <NavDropdown title="Agendamentos" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/">Ver agendamentos</NavDropdown.Item>
+              <NavDropdown.Item href="/">Agendar</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown title="Consultas" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/">Minhas consultas</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+
+          <Nav className="ml-auto">
+            <Nav.Link id="link" href="/paciente/perfil">
+              <img className="avatar" src={avatar} alt="Avatar" />
+              Meu perfil
+            </Nav.Link>
+          </Nav>
+          <Button
+            className="m-4"
+            variant="outline-danger"
+            type="button"
+            size="lg"
+            onClick={() => {
+              history.push("/login");
+            }}
+          >
             Logout
-          </button>
-        </div>
-      </header>
-    </>
+          </Button>
+        </Navbar.Collapse>
+      </Navbar>
+    
   );
 }
