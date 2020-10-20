@@ -89,7 +89,7 @@ export default function Login() {
                         <div id="mt-text">
                          Ainda não é cadastrado?
                         </div>
-                        <Link className="link" to="/pacientes/formulario"> Cadastre-se</Link>
+                        <Link className="link" to="/pacientes/cadastro"> Cadastre-se</Link>
 
                         <Link className="link" to="/">Esqueci a senha</Link>
                     </Card>

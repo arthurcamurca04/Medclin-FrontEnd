@@ -1,23 +1,23 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Navigation from "../../components/Navbar";
-import AsidePanel from "../../components/AsidePanel";
+import AsidePanelPacient from "../../components/AsidePanelPacient";
 import FormProfile from "../../components/FormProfile";
 import "./styles.css";
 
-export default function PatientForm() {
+export default function DoctorProfile() {
   return (
     <>
       <Navigation />
       <Container fluid>
         <Row>
           <Col md={2} className="p-0">
-            <AsidePanel />
+            <AsidePanelPacient />
           </Col>
 
-          <Col>
+          <Col >
             <div className="title">
-              <h1>Paciente</h1>
+              <h1>Médicos</h1>
             </div>
             <FormProfile />
           </Col>

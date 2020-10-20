@@ -5,7 +5,9 @@ import Dashboard from "../pages/Dashboard";
 import AdminDashboard from "../pages/AdminDashboard";
 import ProfissionalsList from "../pages/ProfessionaisList";
 import PatientsList from "../pages/PatientsList";
-import PacientDashboard from "../pages/PacienteDashboard";
+import PacientProfile from "../pages/PacientProfile";
+import DoctorProfile from "../pages/DoctorProfile";
+import DoctorAppointment from "../pages/DoctorAppointment";
 import ComorbitiesScreen from "../pages/Comorbities";
 import ProfessionalForm from "../pages/ProfessionalsForm";
 import PatientForm from "../pages/PatientsForm";
@@ -22,31 +24,30 @@ function Routes() {
       <Suspense fallback={<div></div>}>
         <StoreProvider>
           <Switch>
-            <RoutesPrivate exact path="/" component={Dashboard} />
+
+            {/* Rotas públicas */}
             <Route path="/login" component={Login} />
+            <Route path="/pacientes/cadastro" component={UsersForm} />
+            
+             {/* Rotas privadas - admin */}
+            <RoutesPrivate exact path="/" component={Dashboard} />
             <RoutesPrivate path="/admin/dashboard" component={AdminDashboard} />
             <RoutesPrivate path="/admin/medicos" component={ProfissionalsList} />
             <RoutesPrivate path="/admin/pacientes" component={PatientsList} />
-            <RoutesPrivate path="/paciente/perfil" component={PacientDashboard} />
+            <RoutesPrivate path="/admin/cadastrar/profissional" component={ProfessionalForm}/>
+            <RoutesPrivate path="/admin/cadastrar/paciente" component={PatientForm}/>
+            <RoutesPrivate path="/admin/atualizar/paciente" component={PatientForm}/>
+            <RoutesPrivate path="/admin/atualizar/profissional" component={ProfessionalFormUpdate}/>
+            
+             {/* Rotas privadas - pacientes */}
+            <RoutesPrivate path="/paciente/perfil" component={PacientProfile} />
             <RoutesPrivate path="/paciente/comorbidades" component={ComorbitiesScreen} />
             <RoutesPrivate path="/paciente/consultas/agendar" component={AgendamentoConsulta} />
-            <RoutesPrivate
-              path="/admin/cadastrar/profissional"
-              component={ProfessionalForm}
-            />
-            <RoutesPrivate
-              path="/admin/cadastrar/paciente"
-              component={PatientForm}
-            />
-            <RoutesPrivate
-              path="/admin/atualizar/paciente"
-              component={PatientForm}
-            />
-            <RoutesPrivate
-              path="/admin/atualizar/profissional"
-              component={ProfessionalFormUpdate}
-            />
-            <Route path="/pacientes/formulario" component={UsersForm} />
+            
+             {/* Rotas privadas - médicos */}
+            <RoutesPrivate path="/medicos/perfil" component={DoctorProfile} />
+            <RoutesPrivate path="/medicos/consultas" component={DoctorAppointment} />
+          
             <Route component={NotFound} />
           </Switch>
         </StoreProvider>

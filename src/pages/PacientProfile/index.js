@@ -2,10 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Navigation from "../../components/Navbar";
 import AsidePanelPacient from "../../components/AsidePanelPacient";
-import FormPatient from "../../components/PatientsForm";
+import FormProfile from "../../components/FormProfile";
 import "./styles.css";
 
-export default function PacientDashboard() {
+export default function PacientProfile() {
   return (
     <>
       <Navigation />
@@ -17,9 +17,9 @@ export default function PacientDashboard() {
 
           <Col >
             <div className="title">
-              <h1>Pacientes</h1>
+              <h1>Meu perfil</h1>
             </div>
-            <FormPatient />
+            <FormProfile />
           </Col>
         </Row>
       </Container>

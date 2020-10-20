@@ -23,7 +23,7 @@ export default function CardProfessionals() {
             </Col>
             <Col md={2}>
               <Link to="/admin/atualizar/profissional">
-                <FiEdit size={32} />
+                <FiEdit size={28} />
               </Link>
               <Button variant="link" onClick={() => {}}>
                 <FiTrash2 color="#ff0000" size={28} />
@@ -50,7 +50,7 @@ export default function CardProfessionals() {
 
             <Col md={2}>
               <Link to="/admin/atualizar/profissional">
-                <FiEdit size={32} />
+                <FiEdit size={28} />
               </Link>
               <Button variant="link" onClick={() => {}}>
                 <FiTrash2 color="#ff0000" size={28} />
