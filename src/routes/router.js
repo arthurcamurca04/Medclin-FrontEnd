@@ -12,7 +12,7 @@ import ComorbitiesScreen from "../pages/Comorbities";
 import ProfessionalForm from "../pages/ProfessionalsForm";
 import PatientForm from "../pages/PatientsForm";
 import ProfessionalFormUpdate from "../pages/ProfessionalsFormUpdate";
-import UsersForm from "../pages/UsersForm";
+import SignupUsers from "../pages/SignupUsers";
 import AgendamentoConsulta from "../pages/AgendamentoConsulta";
 import StoreProvider from "../Store/Provider";
 import RoutesPrivate from "./Private";
@@ -27,7 +27,7 @@ function Routes() {
 
             {/* Rotas públicas */}
             <Route path="/login" component={Login} />
-            <Route path="/pacientes/cadastro" component={UsersForm} />
+            <Route path="/pacientes/cadastro" component={SignupUsers} />
             
              {/* Rotas privadas - admin */}
             <RoutesPrivate exact path="/" component={Dashboard} />

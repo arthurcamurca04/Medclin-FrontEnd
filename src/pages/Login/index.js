@@ -47,15 +47,13 @@ export default function Login() {
     }
 
     return (
-        <Container fluid="sm" id="container">
+        <Container>
             <Row>
-                <Col md>
+                <Col className="text-center" md={6}>
                     <img src={logoMedclin} alt="Medclin" />
                 </Col>
-
-
-                <Col md>
-                    <Card id="mt-card" style={{ padding: '2rem' }}>
+                <Col  md={6}>
+                    <Card style={{ padding: '2rem', borderRadius: '20px'}}>
                         <h1>Bem-vindo a Medclin</h1>
                         <p>Faça seu login</p>
                         <Form onSubmit={handleLogin} id="page-login-form">

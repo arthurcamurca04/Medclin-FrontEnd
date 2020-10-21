@@ -1,0 +1,9 @@
+#user-form-icon{
+    width: 400px;
+}
+
+@media(max-width:425px){
+    #user-form-icon{
+        width: 120px;
+    }
+}
