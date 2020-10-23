@@ -15,7 +15,7 @@ export default function PacientProfile() {
             <AsidePanelPacient />
           </Col>
 
-          <Col >
+          <Col md={8}>
             <div className="title">
               <h1>Meu perfil</h1>
             </div>
