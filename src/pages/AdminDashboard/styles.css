@@ -1,39 +1,48 @@
-.title{
+.admin-dashboard-container .title{
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
     border-bottom: 3px solid #aaa;
 }
 
-.cards .cards-list {
+.admin-dashboard-container div.cards{
 
-    list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.4rem 0;
-
+    justify-content: space-around;
 }
 
-.cards .cards-list li{    
+.admin-dashboard-container div.card{
+
+    width: 280px;
+    height: 132px;
     border-radius: .8rem;
-    box-shadow: 1px 1px 1px #ccc; 
+    box-shadow: 1px 1px 1px #ccc;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
 }
 
-.cards .cards-list li strong{
+.admin-dashboard-container div.card .card-img{
+    display: inline-block;
+    width: 132px;
+    height: 132px;
+}
+
+.admin-dashboard-container div.card .card-text{
     color: #aaa;
     font-size: 5.8rem;
 }
 
-.cards .cards-list li{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--color-white);
-    width: 248px;
-    height: 132px;
-}
+@media(max-width:768px){
+    div.cards{
+        
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
-.cards .cards-list li img{
-    width: 84px;
-    height: 84px;
+    div.card{
+        margin-bottom: 1.2rem;
+    }
 }

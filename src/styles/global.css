@@ -1,32 +1,30 @@
 :root{
     font-size: 80%;
-    --color-background: #ddd;
+    --color-background: #e2e2e2;
     --color-white: #ffffff;
     --color-background-aside: #635AFE;
-    --color-outline-button: #ff2244;
-    --color-btn-blue: #6031e2;
-    --color-btn-green: #1fa80d;
   }
   
   *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 0;
   }
   
-  html, body {
-    height: 100vh;
+  html {
+   height: 100vh;
+   width: 100vw;
   }
   
   body{
-    background-color: var(--color-background);
-   
+    background-color: var(--color-background);   
   }
   
   body,
   input, 
   button{
-    font: 500 1.2rem 'Quicksand', sans-serif;
+    font: 400 1.2rem 'Ubuntu', sans-serif;
     
   }
 

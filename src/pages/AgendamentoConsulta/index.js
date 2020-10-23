@@ -12,7 +12,7 @@ export default function AgendamentoConsulta() {
           <Col md={2} className="p-0">
             <AsidePanelPacient />
           </Col>
-          <Col>
+          <Col md={8}>
             <div className="title">
               <h1>Agendamento de consulta</h1>
             </div>

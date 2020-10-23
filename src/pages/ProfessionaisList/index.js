@@ -18,7 +18,7 @@ export default function ProfissionalsList() {
             <Col md={2} className="p-0">
               <AsidePanel />
             </Col>
-            <Col >
+            <Col md={8}>
               <ListOfProfessionals/>
             </Col>
           </Row>

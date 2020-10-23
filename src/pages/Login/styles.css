@@ -13,3 +13,9 @@ img{
 #btn-signIn{
     background-color: #1414aa;
 }
+
+@media(max-width:452px){
+    img{
+        height: 150px;
+    }
+}

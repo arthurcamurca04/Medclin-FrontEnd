@@ -9,39 +9,35 @@ import "./styles.css";
 
 export default function AdminDashboard() {
   return (
-    <>
+    <div className="admin-dashboard-container">
       <Navigation />
-        <Container fluid>
-          <Row>
-            <Col md={2} className="p-0">
-              <AsidePanel />
-            </Col>
-            <Col>
-              <div className="title">
-                <h1>Painel Admin</h1>
-              </div>
+      <Container fluid>
+        <Row>
+          <Col md={2} className="p-0">
+            <AsidePanel />
+          </Col>
+          <Col md={8}>
+            <div className="title">
+              <h1>Painel Admin</h1>
+            </div>
 
-              <div className="admin-panel">
-                <div className="cards">
-                  <ul className="cards-list">
-                    <li>
-                      <strong>10</strong>
-                      <img src={cardDoctor} alt="Médico" />
-                    </li>
-                    <li>
-                    <strong>20</strong>
-                      <img src={cardPatient} alt="Paciente" />
-                    </li>
-                    <li>
-                    <strong>30</strong>
-                      <img src={cardAppointment} alt="Consulta" />
-                    </li>
-                  </ul>
-                </div>
+            <div className="cards">
+              <div className="card">
+                <strong className="card-text">10</strong>
+                <img className="card-img" src={cardDoctor} alt="médico" />
               </div>
-            </Col>
-          </Row>
-        </Container>
-    </>
+              <div className="card">
+                <strong className="card-text">18</strong>
+                <img className="card-img" src={cardPatient} alt="médico" />
+              </div>
+              <div className="card">
+                <strong className="card-text">32</strong>
+                <img className="card-img" src={cardAppointment} alt="médico" />
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 }
