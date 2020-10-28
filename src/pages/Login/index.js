@@ -34,7 +34,7 @@ export default function Login() {
             const { data } = response;
 
             if(data){
-                setToken(data.tokem);
+                setToken(data.token);
                 history.push('/');
             }
             console.log(data);
